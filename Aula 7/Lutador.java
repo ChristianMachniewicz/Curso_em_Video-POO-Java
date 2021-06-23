@@ -1,4 +1,4 @@
-package estudo02;
+
 
 public class Lutador {
     private String nome;
@@ -12,11 +12,19 @@ public class Lutador {
     private float altura;
 
     public void apresentar() {
-        System.out.println("ta vindo um monstro");
+        System.out.println("-------------------------------------------------------");
+        System.out.println("ta vindo um monstro , e ele e o " + this.getNome()  );
+        System.out.println("diretamente de  " + this.getNacionalidade()  );
+        System.out.println("ele tem " + this.getIdade()  );
+        System.out.println("pesando incriveis " + this.getPeso()  );
+        System.out.println("com " + this.getVitorias() + "Vitorias" + this.getEmpates() + "empates e " + this.getDerrotas() + "derrotas" );
     }
 
     public void status() {
-
+        System.out.println( this.getNome() +  " e um peso" + this.getCategoria());
+        System.out.println("Ganhou " + this.getVitorias() + "vezes");
+        System.out.println("empatou " + this.getEmpates() + "vezes");
+        System.out.println("perdeu " + this.getDerrotas() + "vezes");
     }
 
     public void ganharLuta() {
