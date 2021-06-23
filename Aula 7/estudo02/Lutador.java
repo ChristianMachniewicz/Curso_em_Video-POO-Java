@@ -1,5 +1,4 @@
-
-
+package estudo02 ;
 public class Lutador {
     private String nome;
     private String nacionalidade;
@@ -13,18 +12,18 @@ public class Lutador {
 
     public void apresentar() {
         System.out.println("-------------------------------------------------------");
-        System.out.println("ta vindo um monstro , e ele e o " + this.getNome()  );
-        System.out.println("diretamente de  " + this.getNacionalidade()  );
-        System.out.println("ele tem " + this.getIdade()  );
-        System.out.println("pesando incriveis " + this.getPeso()  );
-        System.out.println("com " + this.getVitorias() + "Vitorias" + this.getEmpates() + "empates e " + this.getDerrotas() + "derrotas" );
+        System.out.println(" Ta vindo um monstro! e ele e o :" + this.getNome()  );
+        System.out.println(" Diretamente de  :" + this.getNacionalidade()  );
+        System.out.println(" Ele tem :" + this.getIdade() + " anos" );
+        System.out.println(" Pesando incriveis :" + this.getPeso()  + " kilos");
+        System.out.println(" Com : " + this.getVitorias() + " Vitorias : " + this.getEmpates()   +" Empates e : "   + this.getDerrotas() + " Derrotas" );
     }
 
     public void status() {
         System.out.println( this.getNome() +  " e um peso" + this.getCategoria());
-        System.out.println("Ganhou " + this.getVitorias() + "vezes");
-        System.out.println("empatou " + this.getEmpates() + "vezes");
-        System.out.println("perdeu " + this.getDerrotas() + "vezes");
+        System.out.println(" Ganhou :" + this.getVitorias() + " vezes ");
+        System.out.println(" Empatou :" + this.getEmpates() + " vezes ");
+        System.out.println(" Perdeu :" + this.getDerrotas() + " vezes ");
     }
 
     public void ganharLuta() {
